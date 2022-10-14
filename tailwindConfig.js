@@ -7,7 +7,7 @@ tailwind.config = {
         arapey: ["Arapey", "san serif"],
       },
       fontSize: {
-        '8xl': '15rem',
+        '8xl': '12rem',
         '9xl': '16rem',
     },
 

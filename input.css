@@ -1,51 +1,61 @@
 
 #animatedtext{
-height: 280px;
-overflow: hidden; 
+height: 20rem;
+overflow: hidden;
+
+
 }
 
 #animatedtext li {
   position: relative;
   top:0;
-  animation: slide 4s steps(3) infinite;
+  animation: slide 6s steps(2,jump-none) infinite;
  
 }
 
-@keyframes slide {
-  100% {
-    top: -360px;
-  
-    /* margin: 0px 50px 0px 50px; */
-  }
-  
-}
+
 
 #animatedtext li span{
   position: relative;
-  height: 280px;
-  overflow: hidden;
+  font-size: 15rem;
+  /* height: 15rem; */
+  /* height: 200px; */
+  /* line-height: 120%; */
 }
 
 
 #animatedtext li span::after {
   content:"";
   position: absolute;
-  height:100%;
+  height:120%;
   width: 120%;
   left:0;
   background-color:#F2F2F2;
   border-left: 5px solid #343434;
-  animation: typing 2s steps(13) infinite;
+  animation: typing 3s steps(13, jump-none) infinite;
  
 }
 
 @keyframes typing {
   100% {
-    left:120%;
+    left:100%;
   
     /* margin: 0px 50px 0px 50px; */
   }
   
 }
 
+@keyframes slide {
+  100% {
+    top: -25rem;
+  }
+  
+}
 
+/* #nav-desktop li a:hover {
+  transform: translateY(500px);
+} */
+
+#nav-desktop li a{
+  transition: all 0.3s linear;
+}
